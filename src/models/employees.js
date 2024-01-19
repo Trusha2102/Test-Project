@@ -5,9 +5,6 @@ const Employee = sequelize.define('Employee', {
     name: {
         type: DataTypes.STRING,
         allowNull: false,
-        validate: {
-            isAlpha: true,
-        },
     },
     date_of_birth: {
         type: DataTypes.DATE,
